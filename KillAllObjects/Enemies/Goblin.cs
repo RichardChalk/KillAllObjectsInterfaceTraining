@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KillAllObjects
+namespace KillAllObjects.Enemies
 {
-    internal class TreasureChest : IDamageable
+    internal class Goblin : IDamageable
     {
         public int Damage { get; set; }
-        public int Value { get; set; }
+        public int HP { get; set; }
 
-        public TreasureChest()
+        public Goblin()
         {
-            Damage = 20;
+            Damage = 100;
         }
         public void TakeDamage()
         {
-            Console.WriteLine($"Treasure Chest took {Damage} damage");
+            Console.WriteLine($"Goblin took {Damage} damage");
         }
     }
 }

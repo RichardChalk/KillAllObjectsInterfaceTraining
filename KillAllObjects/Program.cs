@@ -1,4 +1,6 @@
-﻿namespace KillAllObjects
+﻿using KillAllObjects.Enemies;
+
+namespace KillAllObjects
 {
     internal class Program
     {
